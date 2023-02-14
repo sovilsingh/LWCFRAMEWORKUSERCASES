@@ -1,0 +1,22 @@
+<template>
+  <lightning-card  title="Data Table">
+     <lightning-button variant="brand" label={showLabel}  onclick={handleClick}></lightning-button>
+  </lightning-card>
+  <template if:true={isVisible}>
+      <lightning-card  title="DataTable for Contact">
+        <!-- SEARCH INPUT -->
+        <lightning-input type="search" 
+        name="search" 
+        label="Search" value={searchKey}
+        onchange= {handleChange}>
+        </lightning-input>
+        <!-- SEARCH INPUT -->
+        <lightning-datatable
+          key-field="id"
+          data={dataList}
+          columns={columnsList}
+          onrowaction={handleRowAction}>
+      </lightning-datatable>
+      </lightning-card>
+  </template>
+</template>

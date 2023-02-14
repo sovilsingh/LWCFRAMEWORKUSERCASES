@@ -1,0 +1,14 @@
+<template>
+<lightning-card  title="For Each Loop" >
+  <template if:true={dataList}>
+      <template for:each={dataList} for:item="acc" for:index="index">
+        <li key={acc.Id}>
+       <b> {acc.Name} </b>
+       </li>
+      </template>
+  </template>
+  <template if:true={dataError}>
+      <b>{dataError}</b>
+  </template>
+</lightning-card>
+</template>
