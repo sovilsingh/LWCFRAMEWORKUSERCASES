@@ -1,0 +1,25 @@
+<template>
+ <lightning-card  title="Record View Form" icon-name="standard:contact">
+    <lightning-record-view-form
+                record-id={recordId}
+                object-api-name="Contact">
+        <div class="slds-box slds-theme_default">
+            <lightning-output-field field-name="Name"></lightning-output-field>
+            <lightning-output-field field-name="Phone"></lightning-output-field>
+            <lightning-output-field field-name="Email"></lightning-output-field>
+        </div>
+    </lightning-record-view-form>
+    </lightning-card>
+    <lightning-card  title="Record View Form with {}" icon-name="standard:contact">
+    <lightning-record-view-form
+                record-id={recordId}
+                object-api-name={objectApiName}
+                density="auto">
+        <div class="slds-box slds-theme_default">
+            <lightning-output-field field-name={nameField}></lightning-output-field>
+            <lightning-output-field field-name={phoneField}></lightning-output-field>
+            <lightning-output-field field-name={emailField}></lightning-output-field>
+        </div>
+    </lightning-record-view-form>
+ </lightning-card>
+</template>

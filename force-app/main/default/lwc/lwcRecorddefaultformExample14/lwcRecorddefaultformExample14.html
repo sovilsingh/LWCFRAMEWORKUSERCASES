@@ -1,0 +1,19 @@
+<template>
+ <lightning-card  title="Record form - Default Mode-without field" icon-name="standard:contact">
+ <lightning-record-form
+             object-api-name={objectApiName}
+             columns="1"
+             layout-type="Compact">
+ </lightning-record-form>
+ </lightning-card>
+  <lightning-card  title="Record form - Default Mode-with field" icon-name="standard:contact">
+ <lightning-record-form
+             object-api-name={objectApiName}
+             columns="1"
+            fields={fields}
+            mode="edit"
+            record-id={recordId}
+            >
+ </lightning-record-form>
+ </lightning-card>
+</template>

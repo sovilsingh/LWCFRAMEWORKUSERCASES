@@ -1,0 +1,35 @@
+<template>
+<lightning-carousel disable-auto-scroll>
+    <template if:true={players}>
+    <template for:each={players} for:item="footballer">
+    <lightning-carousel-image key={footballer.id}
+    src={footballer.src}
+    header={footballer.header}
+    description={footballer.description}
+    href={footballer.href}>
+    </lightning-carousel-image>
+    </template>
+     </template>
+</lightning-carousel >
+
+<!--<lightning-carousel>
+    <lightning-carousel-image src="https://upload.wikimedia.org/wikipedia/commons/6/65/20180610_FIFA_Friendly_Match_Austria_vs._Brazil_Neymar_850_1705.jpg"
+    header="Neymar Jr."
+    description="Dribilling Master"
+    alternative-text="Test"
+    href="https://en.wikipedia.org/wiki/Neymar" >
+    </lightning-carousel-image>
+    <lightning-carousel-image src="https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
+    header="Kylian Mbappé"
+    description=" French professional footballer"
+    alternative-text="Test"
+    href="https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9" >
+    </lightning-carousel-image>
+     <lightning-carousel-image src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+    header="Cristiano Ronaldo"
+    description="God Of Football"
+    alternative-text="Test"
+    href="https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9" >
+    </lightning-carousel-image>
+   </lightning-carousel> -->
+</template>
