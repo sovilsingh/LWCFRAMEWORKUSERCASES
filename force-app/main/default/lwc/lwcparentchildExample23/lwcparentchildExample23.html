@@ -1,0 +1,8 @@
+<template>
+<lightning-card  variant="Narrow"  title="Parent Component" icon-name="standard:account">
+<lightning-input class="slds-p-horizontal_small" type="number" variant="standard" 
+name="Set Counter" label="Set Counter" min="0" max="100000000" value={startCounter} onchange={handleStartChange}></lightning-input>
+<lightning-button class="slds-p-horizontal_small" variant="base" label="Add 10" title="Add 10" onclick={handleMaximizeCounter}></lightning-button>
+<c-lwcchildparent-example23 counter={startCounter}></c-lwcchildparent-example23>
+</lightning-card>
+</template>

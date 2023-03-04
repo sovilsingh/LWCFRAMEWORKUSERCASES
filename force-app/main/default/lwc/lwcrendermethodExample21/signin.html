@@ -1,0 +1,21 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Sign In" >
+      	<div class="slds-var-m-around-medium">
+           <h2 class="slds-text-heading_medium slds-var-m-bottom_medium">Sign In Form</h2> 
+           <lightning-input type="text"  label="Email"></lightning-input>  
+           <lightning-input type="text"  label="Password"></lightning-input>
+            <lightning-button 
+            variant="destructive" 
+            label="back" 
+            title="back" 
+            onclick={handleClick}
+            class="slds-m-left_x-small"></lightning-button>
+            <lightning-button 
+            variant="success" 
+            label="SignUp" 
+            title="SignUp" 
+            onclick={submitClick}
+            class="slds-m-left_x-small"></lightning-button>      
+      	</div>
+    </lightning-card>
+</template>
